@@ -1,0 +1,209 @@
+ 504  cd demo/
+  505  ls
+  506  git branch
+  507  git branch -D test
+  508  git branch
+  509  git push -d origin test
+  510  cd ..
+  511  ls
+  512  rm -rf demo
+  513  ls
+  514  git clone https://github.com/salilkul/demo-intellipaat.git
+  515  ls -ltr
+  516  cd  demo-intellipaat/
+  517  git branch
+  518  ls
+  519  cd ..
+  520  git clone https://github.com/salilkul/demo-intellipaat.git
+  521  cd  demo-intellipaat/
+  522  git checkout dev
+  523  git branch
+  524  ls
+  525  cd ..
+  526  rm -rf demo-intellipaat/
+  527  git clone -b dev https://github.com/salilkul/demo-intellipaat.git
+  528  ls
+  529  cd  demo-intellipaat/
+  530  git branch
+  531  git checkout master
+  532  git branch
+  533  ls
+  534  #push
+  535  #clone
+  536  #pull
+  537  pwd
+  538  ls
+  539  git branch
+  540  ls
+  541  git status
+  542  cat masterfile
+  543  git pull origin master
+  544  ls
+  545  cat masterfile
+  546  #push
+  547  #pull
+  548  #clone
+  549  #fork
+  550  git fetch origin master
+  551  ls
+  552  cat githubfile
+  553  git merge origin/master
+  554  cat githubfile
+  555  #git pull origin master  == git fetch origin master  + git merge origin/master
+  556  #clone
+  557  #fork
+  558  #push
+  559  #pull
+  560  #fetch
+  561  #merge
+  562  #rebase
+  563  cd ..
+  564  rm -rf demo-intellipaat/
+  565  git clone https://github.com/salilkul/demo-intellipaat.git
+  566  git clone https://github.com/iam-veeramalla/terraform-zero-to-hero.git
+  567  ls
+  568  rm -rf terraform-zero-to-hero/
+  569  rm -rf demo-intellipaat/
+  570  ls
+  571  mkdir demo
+  572  cd demo
+  573  pwd
+  574  ls -ltr
+  575  vi 1.txt
+  576  git init
+  577  ls -ltr
+  578  git status
+  579  git add .
+  580  git commit -m "first commit" .
+  581  ls
+  582  git branch dev1
+  583  git branch dev2
+  584  git branch
+  585  git checkout dev1
+  586  ls
+  587  vi 1.txt
+  588  git add .
+  589  git commit -m "dev1 changes" .
+  590  git status
+  591  git checkout master
+  592  cat 1.txt
+  593  git merge dev1
+  594  git chekcout dev2
+  595  git checkout dev2
+  596  vi 1.txt
+  597  git add .
+  598  git commit -m "dev2 changes" .
+  599  ls
+  600  git checkout master
+  601  cat 1.txt
+  602  git merge dev2
+  603  ls
+  604  cat 1.txt
+  605  git status
+  606  git mergetool
+  607  ls -ltr
+  608  cat 1.txt
+  609  cat 1.txt.orig
+  610  rm 1.txt.orig
+  611  git status
+  612  git add 1.txt
+  613  git commit -m "final file" .
+  614  git commit -m "final file"
+  615  git status
+  616  git mergetool
+  617  vi 2.txt
+  618  git branch test1
+  619  git branch test2
+  620  git chckout test1
+  621  git checkout test1
+  622  vi 2.txt
+  623  git add .
+  624  git commit -m "test1" .
+  625  git checkout master
+  626  git merge test1
+  627  git chekout test2
+  628  git checkout test2
+  629  ls
+  630  git checkout master
+  631  ls
+  632  git checkout test1
+  633  ls
+  634  git chekcout test2
+  635  git checkout test2
+  636  ls
+  637  cd ..
+  638  rm -rf demo
+  639  mkdir demo
+  640  cd demo
+  641  git init
+  642  vi 1.txt
+  643  git checkout -b dev1
+  644  cd demo/
+  645  git branch
+  646  ls
+  647  git status
+  648  git add .
+  649  git commit -m "master file" .
+  650  git branch dev1
+  651  git branch dev2
+  652  git branch dev3
+  653  git checkout dev2
+  654  vi 1.txt
+  655  git add .
+  656  git commit -m "dev1" .
+  657  git checkout master
+  658  git branch
+  659  git checkout dev1
+  660  git merge dev2
+  661  git checkout dev3
+  662  vi 1.txt
+  663  git add .
+  664  git commit -m "dev3" .
+  665  git checkout dev1
+  666  git merge dev3
+  667  git mergetool
+  668  git status
+  669  rm 1.txt.orig
+  670  git add .
+  671  git commit -m  "final"
+  672  cat 1.txt
+  673  git status
+  674  git branch
+  675  git log --oneline
+  676  vi 1.txt
+  677  git add .
+  678  git commit -m "new change" .
+  679  cat 1.txt
+  680  git log --oneline
+  681  git revert fb262e1
+  682  git status
+  683  git log
+  684  cat 1.txt
+  685  ls -ltra
+  686  cd .git/
+  687  ls
+  688  vi config
+  689  git config user.email "local@gmai.com"
+  690  git config --local user.name "localuser"
+  691  cat config
+  692  pwd
+  693  cd
+  694  cat .config/
+  695  cd .config/
+  696  ls
+  697  cd ..
+  698  ls -ltra
+  699  vi .gitconfig
+  700  cat .gitconfig
+  701  git config --global credential.helper store
+  702  git config --global credential.helper 'cache --timeout=36000'
+  703  #local
+  704  #global
+  705  #system
+  706  cd /etc/
+  707  ls
+  708  vi gitconfig
+  709  pwd
+  710  #local --> .git dir of the local repo
+  711  #global --> .gitconfig of the user
+  712  #system --> it will for entire machine under /etc
